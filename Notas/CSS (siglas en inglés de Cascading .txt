@@ -1,0 +1,96 @@
+CSS (Cascading Style Sheets, en castellano Hojas de estilo en cascada), es un lenguaje de diseño gráfico para definir y crear la presentación de un documento estructurado escrito en un lenguaje de marcado.​
+
+Junto con HTML y JavaScript, es una tecnología usada por muchos sitios web para crear páginas visualmente atractivas, interfaces de usuario para aplicaciones web y GUIs para muchas aplicaciones móviles.
+
+Está diseñado principalmente para marcar la separación del contenido del documento y la forma de presentación de este, características tales como las capas o layouts, los colores y las fuentes.​ Esta separación busca mejorar la accesibilidad del documento, proveer más flexibilidad y control en la especificación de características presentacionales, permitir que varios documentos HTML compartan un mismo estilo usando una sola hoja de estilos separada en un archivo .css, y reducir la complejidad y la repetición de código en la estructura del documento.
+
+La separación del formato y el contenido hace posible presentar el mismo documento marcado en diferentes estilos para diferentes métodos de renderizado, como en pantalla, en impresión, en voz (mediante un navegador de voz o un lector de pantalla), y dispositivos táctiles basados en el sistema Braille. También se puede mostrar una página web de manera diferente dependiendo del tamaño de la pantalla o tipo de dispositivo. Los lectores pueden especificar una hoja de estilos diferente, como una hoja de estilos CSS guardado en su computadora, para sobreescribir la hoja de estilos del diseñador.
+
+Describe un esquema prioritario para determinar qué reglas de estilo se aplican si más de una regla coincide para un elemento en particular. Estas reglas son aplicadas con un sistema llamado de cascada, de modo que las prioridades son calculadas y asignadas a las reglas, así que los resultados son predecibles.
+
+La especificación CSS es mantenida por W3C (World Wide Web Consortium, en adelante W3C). El MIME type text/css está registrado para su uso por CSS descrito en el RFC 2318.5​ El W3C proporciona una herramienta de validación de CSS gratuita para los documentos CSS.
+
+CSS se ha creado en varios niveles y perfiles. Cada nivel de CSS se construye sobre el anterior, generalmente añadiendo funciones al nivel previo.
+
+Los perfiles son, generalmente, parte de uno o varios niveles de CSS definidos para un dispositivo o interfaz particular. Actualmente, pueden usarse perfiles para dispositivos móviles, impresoras o televisiones.
+
+Evolución de CSS.
+
+CSS1
+La primera especificación oficial de CSS, recomendada por la W3C fue CSS1, publicada en diciembre de 1995,21​ y abandonada en abril de 2008.21​
+
+Algunas de las funcionalidades que ofrece son:
+
+Propiedades de las fuentes, como tipo, tamaño, énfasis...
+Color de texto, fondos, bordes u otros elementos.
+Atributos del texto, como espaciado entre palabras, letras, líneas, etcétera.
+Alineación de textos, imágenes, tablas u otros.
+Propiedades de caja, como margen, borde, relleno o espaciado.
+Propiedades de identificación y presentación de listas.
+
+CSS2
+La especificación CSS2 fue desarrollada por la W3C y publicada como recomendación en mayo de 1998, y abandonada en abril de 2008.22​
+
+Como ampliación de CSS1, se ofrecieron, entre otras:
+
+Las funcionalidades propias de las capas (<div>) como de posicionamiento relativo/absoluto/fijo, niveles (z-index), etcétera.
+El concepto de "media types".
+Soporte para las hojas de estilo auditivas.
+Texto bidireccional, sombras, etcétera.
+
+CSS 2.1
+La primera revisión de CSS2, usualmente conocida como "CSS 2.1", corrige algunos errores encontrados en CSS2, elimina funcionalidades poco soportadas o inoperables en los navegadores y añade alguna nueva especificación.
+
+De acuerdo al sistema de estandarización técnica de las especificaciones, CSS2.1 tuvo el estado de "candidato" (candidate recommendation) durante varios años,23​ pero la propuesta fue rechazada en junio de 2005. En junio de 2007 fue propuesta una nueva versión candidata, y está actualizada en 2009, pero en diciembre de 2010 fue nuevamente rechazada.
+
+En abril de 2011, CSS 2.1 volvió a ser propuesta como candidata,24​ y después de ser revisada por el W3C Advisory Committee, fue finalmente publicada como recomendación oficial el 7 de junio de 2011.25​
+
+CSS3
+A diferencia de CSS2, que fue una única especificación que definía varias funcionalidades, CSS3 está dividida en varios documentos separados, llamados "módulos".
+
+Cada módulo añade nuevas funcionalidades a las definidas en CSS2, de manera que se preservan las anteriores para mantener la compatibilidad.
+
+Los trabajos en el CSS3, comenzaron a la vez que se publicó la recomendación oficial de CSS2, y los primeros borradores de CSS3 fueron liberados en junio de 1999.26​
+
+Debido a la modularización del CSS3, diferentes módulos pueden encontrarse en diferentes estados de su desarrollo,27​ de forma que a fechas de noviembre de 2011, hay alrededor de cincuenta módulos publicados,26​ tres de ellos se convirtieron en recomendaciones oficiales de la W3C en 2011: "Selectores", "Espacios de nombres" y "Color".
+
+Algunos módulos, como "Fondos y colores", "Consultas de medios" o "Diseños multicolumna" están en fase de "candidatos", y considerados como razonablemente estables, a finales de 2011, y sus implementaciones en los diferentes navegadores son señaladas con los prefijos del motor del mismo.28​
+
+Limitaciones de CSS.
+Algunas de las limitaciones conocidas de las capacidades actuales de CSS son:
+
+Los selectores no pueden ascender. CSS actualmente no ofrece una manera de seleccionar al padre de un elemento que satisfaga algún criterio.33​ Los selectores CSS Nivel 4, que aún están en calidad de Working Draft, ha propuesto un selector, pero solo como parte de otro selector.34​ un esquema de selectors más avanzado (como XPath) podría habilitar hojas de estilo más sofisticadas. Las mayores razones del CSS Working Group para rechazar propuestas para los selectores ascendentes son relacionadas al rendimiento del navegador y las fallas en aumento del renderizado.
+
+Las pseudoclases dinámicas no se pueden controlar. Las pseudoclases dinámicas (como :hover) no se pueden controlar o deshabilitar desde el navegador, lo que las hace susceptibles de abuso por parte de los diseñadores de banners o ventanas emergentes.​
+
+No se pueden nombrar estilos CSS. No existe manera alguna de nombrar a un estilo CSS, lo cual podría permitir scripts del lado del cliente para referirse a la regla aun si el selector cambia.
+
+No se pueden incluir estilos de una regla dentro de otra. Los estilos CSS en ocasiones deben ser duplicados en varias reglas para alcanzar el efecto deseado, causando mantenimiento adicional y requiriendo más pruebas. Algunas características de CSS fueron propuestas para solventar esto, pero (en febrero de 2016) no se ha implementado nada aún.
+
+No se puede seleccionar texto específico sin alterar el marcado. Además del pseudo-elemento :first-letter, no se puede seleccionar un rango específico de texto sin utilizar etiquetas como <span>.
+
+Limitaciones resueltas. También hay limitaciones que ya han sido resueltas:
+
+Alineado vertical. Mientras que el alineado horizontal es generalmente fácil de controlar, el alineado vertical es frecuentemente no intuitivo, o de plano imposible. Simples tareas, como la de centrar un elemento verticalmente o poniendo un pie de página abajo es muy difícil. El Flexible Box Module mejora esta situación considerablemente y el alineado vertical es mucho más simple y soportado en todos los navegadores actuales. Los navegadores más viejos no tienen estas características (principalmente Internet Explorer 9 y abajo) y no son soportados actualmente por sus fabricantes.
+
+Ausencia de expresiones. No hay aun una opción estándar para especificar los valores de propiedades como una expresión simple (como margin-left: 10% – 3em + 4px;). Esto puede ser útil en muchos casos, como para calcular el número de columnas de una tabla. Internet Explorer en sus versiones 5 a 7 soportan una extensión propietaria expression(),​ con una funcionalidad similar. expression() ya no es soportada por Internet Explorer 8 en adelante, excepto en los modos de compatibilidad. Esta decisión fue tomada para mejorar "el cumplimiento de los estándares, el rendimiento del navegador, y por razones de seguridad".​ Como sea, una recomendación candidata calc() para superar esta limitación ha sido publicada por el CSS WG y ahora está soportada por la mayoría de los navegadores modernos.
+
+Ausencia de la declaración de columnas de texto. Aunque ya es posible implementar esto en la especificación de CSS3 (usando el módulo column-count), las capas con muchas columnas son difíciles de implementar con CSS 2.1.​ Con CSS 2.1, el proceso se hace usando elementos flotantes, los cuales son renderizados de diferente manera en los distintos navegadores, tamaños, formas de pantalla y sistemas operativos. Ahora, todos los navegadores modernos soportan esta característica de CSS3 de una forma u otra.​
+
+Ventajas
+Por otro lado, algunas ventajas de utilizar CSS son:
+
+Separación del contenido y la presentación. CSS facilita la publicación de contenido en múltiples formatos de presentación basado en parámetros nominales. Estos incluyen preferencias explícitas del usuario, diferentes navegadores web, el tipo de dispositivo usado para ver el contenido (una PC o un teléfono inteligente), la localización geográfica u otras variables.
+
+Consistencia del sitio. Cuando CSS es usado efectivamente, en términos de herencia y "cascading", una hoja de estilos global puede ser usado para aplicar estilos a todo un sitio. Si más adelante estos estilos deben ser cambiados, los cambios pueden ser hechos solo con cambiar las reglas en la hoja de estilos global. Antes de CSS, esto era mucho más difícil, caro y más tardado.
+
+Ancho de banda. Una hoja de estilos interna o externa, especifica el estilo para un conjunto de elementos HTML seleccionados por clase, tipo, o herencia. Esto es más eficiente que repetir información para cada ocurrencia del elemento. Una hoja de estilos externa usualmente es guardada en la caché del navegador, y puede ser usada en múltiples páginas sin ser cargada de nuevo, reduciendo la transferencia de datos a través de la red.
+
+Formateo de página. Con un cambio simple en una sola línea, puede cambiarse la hoja de estilos para la misma página. Esto trae ventajas para la accesibilidad, además de que posibilita adaptar el sitio a diferentes dispositivos.
+
+Accesibilidad. Sin CSS, los diseñadores web típicamente diseñaban sus páginas con elementos como tablas que dificultaban la accesibilidad para otros usuarios, y que iban en perjuicio de ciertos usos de los documentos, por parte de navegadores orientados a personas con algunas limitaciones sensoriales.
+
+
+Framework CSS
+Los frameworks CSS son bibliotecas preparadas para permitir la simplificación, y el mayor cumplimiento de los estándares en el diseño de páginas web usando el lenguaje CSS. Algunos de los frameworks CSS más comunes son Foundation, Blueprint, Bootstrap, Cascade Framework y Materialize. Como en la programación de bibliotecas en los lenguajes de script, los frameworks CSS son usualmente incorporados como hojas de estilo CSS externas referenciadas con la etiqueta <link>. Esto provee una gran cantidad de opciones listas para el diseño y la maquetación de una página web. Aunque muchos frameworks ya han sido publicados, algunos diseñadores las usan mayormente para desarrollar prototipos rápidos, o por motivos de aprendizaje, y prefieren construir a mano su propio código CSS.
+
